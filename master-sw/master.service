@@ -1,0 +1,11 @@
+[Unit]
+Description=wgmesh Master Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/wgmesh-master
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
